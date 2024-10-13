@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes wave {
+  0% {
+    @apply outline outline-0;
+  }
+  25% {
+    @apply outline outline-4;
+  }
+  50% {
+    @apply outline outline-8;
+  }
+  100% {
+    @apply outline outline-0;
+  }
+}
+
+.animate-wave {
+  animation-name: wave;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
